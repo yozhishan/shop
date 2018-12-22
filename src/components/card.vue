@@ -1,19 +1,19 @@
 <template>
   <div>
-    <p class="card">
+    <!-- <p class="card">
       {{text}}
-    </p>
+    </p> -->
   </div>
 </template>
 
 <script>
 export default {
-  props: ['text']
+  // props: ['text']
 }
 </script>
 
 <style>
-.card {
+/* .card {
   padding: 10px;
-}
+} */
 </style>
