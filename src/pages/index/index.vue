@@ -1,12 +1,14 @@
 <template>
 <!-- 搜索框 -->
   <div>
-    <div class="search-wrapper">
+    <!-- <div class="search-wrapper">
       <div class="search-input">
         <icon type="search" size="16" />
         搜索
       </div>
-    </div>
+    </div> -->
+    <Search/>
+
     <!-- 轮播图 -->
     <swiper indicator-dots 
     autoplay
@@ -59,7 +61,9 @@
 </template>
 
 <script>
-
+// 引入搜索组件
+import Search from '../../components/Search.vue';
+// 封装请求方法
 import request from "../../utils/request.js"
 
 export default {
@@ -70,6 +74,10 @@ export default {
       menus:[],
       floors:[]
     }
+  },
+  // 注册组件
+  components:{
+    Search,
   },
    mounted() {
      this.getData();
@@ -149,68 +157,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-  .search-wrapper{
-    background: #DD434F;
-    padding:20rpx;
-
-    .search-input{
-      background:#fff;
-      height:60rpx;
-      font-size:15px;
-      color:#999;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .search-input icon{
-      margin-right:5px;
-    }
-  }
-
-  .slide-image{
-    height:340rpx;
-    width:750rpx;
-  }
-  .navMenus{
-    display: flex;
-    justify-content: space-around;
-    padding:20rpx 0;
-    img{
-      width: 128rpx;
-      height:140rpx;
-    }
-  }
-  .floor-title{
-    img{
-      width:750rpx;
-      height:60rpx;
-      display: block;
-    }
-  }
-   .product{
-    padding:20rpx;
-    display: flex;
-
-    .left{
-      margin-right:15rpx;
-      img{
-        width:232rpx;
-        height:385rpx;
-      }
-    }
-
-    .right{
-      display: flex;
-      flex-wrap: wrap;
-      flex:1;
-      justify-content: space-between;
-
-      img{
-        width:232rpx;
-        height:188rpx;
-        
-      }
-    }
-  }
+@import 'style.scss';
 </style>

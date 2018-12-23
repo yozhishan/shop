@@ -1,0 +1,77 @@
+.main{
+    background: #eee;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    left:0;
+    right:0;
+    // 当同时设置top和bottom时候，该元素的高度由top到bottom值的距离
+    top:100rpx;
+    bottom:0;
+    // width:100%;
+
+    .left{
+        width: 200rpx;
+        height: 100%;
+        background:#f6f6f6;
+        font-size: 16px;
+        flex-shrink: 0;
+      .menu-item{
+       height: 100rpx;
+       width: 100%;
+       line-height: 100rpx;
+       text-align: center;
+       position: relative;
+      
+      }
+      .active{
+          color: red;
+          background: #fff;
+          &:before{
+              display: block;
+              content:"";
+              width: 4px;
+              height: 60rpx;
+              background-color: red;
+              position: absolute;
+              top: 20rpx;
+              left: 0;
+
+          }
+      }
+    }
+    .right{
+        flex:1;
+        height: 100%;
+        background: #fff;
+        .brand-title{
+            text-align: center;
+            span{
+                color:#999;
+                margin: 0 10px;
+            }
+        }
+        .brand-list{
+            width: 100%;
+            padding: 20rpx;
+            display: flex;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+            .brand-item{
+                width: 33%;
+                font-size: 16px;
+                text-align: center;
+                padding: 0 10rpx;
+                margin-bottom: 20rpx;
+                box-sizing: border-box;
+               img{
+                   display: block;
+                   width: 100%;
+                    height: 100rpx;
+                     margin-bottom: 10rpx;
+
+               }
+            }
+        }
+    }
+}
