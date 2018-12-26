@@ -3,13 +3,16 @@
     "pages/index/main",
     "pages/cart/main",
     "pages/category/main",
-    "pages/user/main"
+    "pages/user/main",
+    "pages/searchlist/main",
+    "pages/search/main",
+    "pages/goods_detail/main"
     ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#DD434F",
-    "navigationBarTitleText": "黑马优购",
-    "navigationBarTextStyle": "black"
+    "navigationBarTitleText": "优购",
+    "navigationBarTextStyle": "white"
   },
   "tabBar": {
     "color": "#333",

@@ -6,7 +6,7 @@
     left:0;
     right:0;
     // 当同时设置top和bottom时候，该元素的高度由top到bottom值的距离
-    top:100rpx;
+    top:100rpx; //搜索框
     bottom:0;
     // width:100%;
 
@@ -15,6 +15,8 @@
         height: 100%;
         background:#f6f6f6;
         font-size: 16px;
+        // overflow: auto;
+        // 保证flex布局比例不会变形，图片不会变形
         flex-shrink: 0;
       .menu-item{
        height: 100rpx;

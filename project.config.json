@@ -34,8 +34,8 @@
 				{
 					"id": 0,
 					"name": "dev",
-					"pathName": "pages/category/main",
-					"query": ""
+					"pathName": "pages/cart/main",
+					"query": "goods_id=47869"
 				}
 			]
 		}
