@@ -1,10 +1,13 @@
 <template>
  <!-- 搜索框 -->
     <div class="search-wrapper">
-      <div class="search-input">
+      <!--  hover-class="none" 没有样式 -->
+     <a href="/pages/search/main" hover-class="none">
+        <div class="search-input">
         <icon type="search" size="16" />
         搜索
       </div>
+     </a>
     </div>
 </template>
 <script>

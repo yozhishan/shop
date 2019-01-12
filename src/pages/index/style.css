@@ -1,0 +1,60 @@
+.slide-image {
+  height: 340rpx;
+  width: 750rpx;
+}
+
+.navMenus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 20rpx 0;
+}
+
+.navMenus img {
+  width: 128rpx;
+  height: 140rpx;
+}
+
+.floor-title img {
+  width: 750rpx;
+  height: 60rpx;
+  display: block;
+}
+
+.product {
+  padding: 20rpx;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product .left {
+  margin-right: 15rpx;
+}
+
+.product .left img {
+  width: 232rpx;
+  height: 385rpx;
+}
+
+.product .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.product .right img {
+  width: 232rpx;
+  height: 188rpx;
+}
+/*# sourceMappingURL=style.css.map */

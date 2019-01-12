@@ -57,7 +57,6 @@
     .ware-content{
         flex:1;
         padding:20rpx;
-        padding-left:0;
         display: flex;
         justify-content: space-between;
         border-bottom:1px #eee solid;
@@ -114,9 +113,7 @@
         font-size:12px;
     }
 }
-.ware-list{
-    padding-bottom:100rpx;
-}
+
 .cart-total{
     border-top:1px #eee solid;
     display: flex;
@@ -161,22 +158,39 @@
 .colorRed{
     color:red;
 }
+
+.get-address{
+    padding:20rpx;
+    display: flex;
+    justify-content: center;
+}
+
 .empty{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 
-     //   设置高度，可以用绝对定位或固定定位
-     position: absolute;
-     top:0;
-     bottom:0;
-     // 宽度
-     width:100%;
+    position: absolute;
+    top:0;
+    bottom:0;
+    width:100%;
 
     img{
         width:160rpx;
         height:160rpx;
         margin-bottom:50rpx;
     }
+}
+
+
+.pa20{
+    padding:20rpx;
+    span{
+        color:red;
+    }
+}
+
+.pay-button{
+    margin:20rpx;
 }

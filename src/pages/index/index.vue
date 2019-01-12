@@ -17,7 +17,7 @@
    >
   <block v-for="(item,index) in imgUrl" :key="index">
     <swiper-item>
-      <img :src="item.image_src" class="slide-image" mode="aspectFill" />
+      <img :src="item.image_src" class="slide-image" mode="aspectFill"  @click="handleGoodsDetail(item.navigator_url)"/>
     </swiper-item>
   </block>
 </swiper>
@@ -40,7 +40,8 @@
        <!-- 左侧商品 -->
        <div class="left">
          <!-- 左侧图片取列表中的第0项的大图片 -->
-         <img :src="item.product_list[0].image_src" mode="aspectFill">
+         <img :src="item.product_list[0].image_src" mode="aspectFill"
+          @click="handleGoodsList(item.product_list[0].name)">
        </div>
        <!-- 右侧商品 -->
        <div class="right">
@@ -50,7 +51,7 @@
           <div class="right-item" 
            v-if="subIndex!=0"
           v-for="(subItem,subIndex) in item.product_list" :key="subIndex">
-           <img :src="subItem.image_src">
+           <img :src="subItem.image_src"  @click="handleGoodsList(subItem.name)">
           </div>
 
        </div>
@@ -121,6 +122,19 @@ export default {
 
    },
    methods: {
+    // 楼层跳转搜索列表页
+    handleGoodsList(keyword){
+      wx.navigateTo({
+        url: `/pages/searchlist/main?keyword=${keyword}`
+      })
+    },
+    // 跳转到商品详情页
+    handleGoodsDetail(url){
+      const arr = url.split("=");
+      wx.navigateTo({
+        url: `/pages/goods_detail/main?goods_id=${arr[1]}`
+      })
+    },
     //  用同步的方法处理异步请求
     // 自定义async函数
       // 声明函数

@@ -6,7 +6,9 @@
     "pages/user/main",
     "pages/searchlist/main",
     "pages/search/main",
-    "pages/goods_detail/main"
+    "pages/goods_detail/main",
+    "pages/auth/main",
+    "pages/enter_order/main"
     ],
   "window": {
     "backgroundTextStyle": "light",
